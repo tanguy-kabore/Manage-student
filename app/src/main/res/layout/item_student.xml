@@ -1,0 +1,65 @@
+<!-- res/layout/item_student.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonsLayout"
+        android:layout_toLeftOf="@+id/buttonsLayout"/>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/buttonEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="@android:color/holo_blue_light"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="@android:color/holo_red_light"
+            android:background="@null" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewId"
+        android:layout_alignStart="@+id/textViewId"
+        android:layout_alignLeft="@+id/textViewId"
+        android:layout_toStartOf="@+id/buttonsLayout"
+        android:layout_toLeftOf="@+id/buttonsLayout"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Ajoutez d'autres vues au besoin -->
+
+</RelativeLayout>
